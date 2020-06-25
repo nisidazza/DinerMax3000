@@ -24,7 +24,7 @@ namespace DinerMax3000Console
 
             Order hungryGuestOrder = new Order();
 
-            for (int i=0; i<=summerMenu.items.Count - 1; i++)
+            for (int i = 0; i <= summerMenu.items.Count - 1; i++)
             {
                 MenuItem currentItem = summerMenu.items[i];
                 hungryGuestOrder.items.Add(currentItem);
@@ -36,6 +36,16 @@ namespace DinerMax3000Console
             }
 
             Console.WriteLine("The total is: " + hungryGuestOrder.Total);
+
+            try
+            {
+                outsideDrinks.AddMenuItems("Himkok", "9 of 10 peple recommend staying away from this drinks.", -1);
+            }
+            catch (Exception thrownException)
+            {
+                Console.WriteLine(thrownException.Message);
+            }
+
             Console.ReadLine();
         }
     }
