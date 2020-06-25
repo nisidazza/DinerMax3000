@@ -15,6 +15,12 @@ namespace DinerMax3000Console
             summerMenu.AddMenuItems("Salmon", "Fresh Norwegian Salmon with Sandefjord butter.", 25.50);
             summerMenu.AddMenuItems("Taco", "All Norwegians eat taco on Fridays.", 10);
             summerMenu.HospitalDirections = "Right around the corner of 5th street. Ask for Dr. Jones";
+
+
+            DrinkMenu outsideDrinks = new DrinkMenu();
+            outsideDrinks.Disclaimer = "Do not drink and code.";
+            outsideDrinks.AddMenuItems("Virgin Cuba Libre", "A classic", 10);
+            outsideDrinks.AddMenuItems("Screwdriver", "Makes you hammered", 15);
         }
     }
 }
