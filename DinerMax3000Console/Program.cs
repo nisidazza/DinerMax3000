@@ -10,10 +10,11 @@ namespace DinerMax3000Console
     {
         static void Main(string[] args)
         {
-            Menu summerMenu = new Menu();
+            FoodMenu summerMenu = new FoodMenu();
             summerMenu.Name = "Summer Menu";
             summerMenu.AddMenuItems("Salmon", "Fresh Norwegian Salmon with Sandefjord butter.", 25.50);
             summerMenu.AddMenuItems("Taco", "All Norwegians eat taco on Fridays.", 10);
+            summerMenu.HospitalDirections = "Right around the corner of 5th street. Ask for Dr. Jones";
         }
     }
 }
