@@ -34,6 +34,9 @@ namespace DinerMax3000Console
             {
                 hungryGuestOrder.items.Add(currentItem);
             }
+
+            Console.WriteLine("The total is: " + hungryGuestOrder.Total);
+            Console.ReadLine();
         }
     }
 }
