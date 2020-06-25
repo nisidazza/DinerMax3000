@@ -8,7 +8,16 @@ namespace DinerMax3000Console
 {
     class Menu
     {
-        public string Name;
+        public Menu() {
+            items = new List<MenuItem>();
 
+        }
+
+        public void AddMenuItems(string Title, string Description, double Price)
+        { 
+        }
+
+        public string Name;
+        public List<MenuItem> items;
     }
 }
