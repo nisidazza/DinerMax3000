@@ -21,6 +21,19 @@ namespace DinerMax3000Console
             outsideDrinks.Disclaimer = "Do not drink and code.";
             outsideDrinks.AddMenuItems("Virgin Cuba Libre", "A classic", 10);
             outsideDrinks.AddMenuItems("Screwdriver", "Makes you hammered", 15);
+
+            Order hungryGuestOrder = new Order();
+
+            for (int i=0; i<=summerMenu.items.Count - 1; i++)
+            {
+                MenuItem currentItem = summerMenu.items[i];
+                hungryGuestOrder.items.Add(currentItem);
+            }
+
+            foreach (MenuItem currentItem in outsideDrinks.items)
+            {
+                hungryGuestOrder.items.Add(currentItem);
+            }
         }
     }
 }
