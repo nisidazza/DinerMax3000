@@ -12,11 +12,8 @@ namespace DinerMax3000Console
         {
             Menu summerMenu = new Menu();
             summerMenu.Name = "Summer Menu";
-            MenuItem salmon = new MenuItem();
-            salmon.Title = "Salmon";
-            salmon.Description = "Fresh Norwegian Salmon with Sandefjord butter";
-            salmon.Price = 25.50;
-            summerMenu.items.Add(salmon);
+            summerMenu.AddMenuItems("Salmon", "Fresh Norwegian Salmon with Sandefjord butter.", 25.50);
+            summerMenu.AddMenuItems("Taco", "All Norwegians eat taco on Fridays.", 10);
         }
     }
 }
