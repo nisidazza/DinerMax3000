@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DinerMax3000Console", "DinerMax3000Console\DinerMax3000Console.csproj", "{07D87EE6-1B0A-4ACA-95FE-52A17F2B5F7F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DinerMax3000.Business", "DinerMax3000BusinessLayer\DinerMax3000.Business.csproj", "{8F87F8BE-B7B5-4F83-B715-94A7DC6151E0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{07D87EE6-1B0A-4ACA-95FE-52A17F2B5F7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{07D87EE6-1B0A-4ACA-95FE-52A17F2B5F7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{07D87EE6-1B0A-4ACA-95FE-52A17F2B5F7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F87F8BE-B7B5-4F83-B715-94A7DC6151E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F87F8BE-B7B5-4F83-B715-94A7DC6151E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F87F8BE-B7B5-4F83-B715-94A7DC6151E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F87F8BE-B7B5-4F83-B715-94A7DC6151E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
