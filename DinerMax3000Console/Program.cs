@@ -14,6 +14,12 @@ namespace DinerMax3000Console
             //access data from database
             List<Menu> menusFromDatabase = Menu.GetAllMenus();
 
+
+            Menu firstMenu = menusFromDatabase[0];
+            firstMenu.SaveNewMenuItem("Smorgas", "A classic nordic dish.", 10);
+            //reload the data
+            menusFromDatabase = Menu.GetAllMenus();
+
             Order hungryGuestOrder = new Order();
 
             // loops through the menus
