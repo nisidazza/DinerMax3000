@@ -11,32 +11,21 @@ namespace DinerMax3000Console
     {
         static void Main(string[] args)
         {
+            //access data from database
             List<Menu> menusFromDatabase = Menu.GetAllMenus();
 
             Order hungryGuestOrder = new Order();
 
-            for (int i = 0; i <= summerMenu.items.Count - 1; i++)
+            // loops through the menus
+            foreach (Menu currentMenu in menusFromDatabase) 
             {
-                MenuItem currentItem = summerMenu.items[i];
-                hungryGuestOrder.items.Add(currentItem);
-            }
-
-            foreach (MenuItem currentItem in outsideDrinks.items)
-            {
-                hungryGuestOrder.items.Add(currentItem);
+                foreach (MenuItem currentItem in currentMenu.items)
+                {
+                    hungryGuestOrder.items.Add(currentItem);
+                }
             }
 
             Console.WriteLine("The total is: " + hungryGuestOrder.Total);
-
-            try
-            {
-                outsideDrinks.AddMenuItems("Himkok", "9 of 10 peple recommend staying away from this drinks.", -1);
-            }
-            catch (Exception thrownException)
-            {
-                Console.WriteLine(thrownException.Message);
-            }
-
             Console.ReadLine();
         }
     }
