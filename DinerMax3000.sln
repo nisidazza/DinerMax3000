@@ -7,6 +7,27 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DinerMax3000Console", "Dine
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DinerMax3000.Business", "DinerMax3000BusinessLayer\DinerMax3000.Business.csproj", "{8F87F8BE-B7B5-4F83-B715-94A7DC6151E0}"
 EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "DinerMax3000Web", "DinerMax3000Web\", "{251F350C-F4C0-42C7-B9C7-D322C5E84AD3}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.7.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_55293"
+		Debug.AspNetCompiler.PhysicalPath = "DinerMax3000Web\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_55293\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_55293"
+		Release.AspNetCompiler.PhysicalPath = "DinerMax3000Web\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_55293\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "55293"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +42,10 @@ Global
 		{8F87F8BE-B7B5-4F83-B715-94A7DC6151E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F87F8BE-B7B5-4F83-B715-94A7DC6151E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F87F8BE-B7B5-4F83-B715-94A7DC6151E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{251F350C-F4C0-42C7-B9C7-D322C5E84AD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{251F350C-F4C0-42C7-B9C7-D322C5E84AD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{251F350C-F4C0-42C7-B9C7-D322C5E84AD3}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{251F350C-F4C0-42C7-B9C7-D322C5E84AD3}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
