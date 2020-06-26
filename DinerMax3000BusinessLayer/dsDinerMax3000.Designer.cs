@@ -2208,13 +2208,13 @@ SELECT Id, Name, MenuType, Disclaimer, HospitalDirections FROM Menu WHERE (Id = 
             this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[2].Connection = this.Connection;
             this._commandCollection[2].CommandText = @"INSERT INTO [dbo].[Menu_Item] ([Name], [Description], [Price]) VALUES (@Name, @Description, @Price);
-INSERT INTO Menu_Menu_Item (MenuId, MenuItemId) values (@MenuId, SCOPE_IDENTITY());
-SELECT Id, Name, Description, Price FROM Menu_Item WHERE (Id = SCOPE_IDENTITY())";
+INSERT INTO Menu_MenuItem(MenuId, MenuItemId) values (@MenuId, SCOPE_IDENTITY());
+SELECT Id, Name, Description, Price FROM Menu_Item WHERE (Id = SCOPE_IDENTITY());";
             this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Name", global::System.Data.SqlDbType.VarChar, 100, global::System.Data.ParameterDirection.Input, 0, 0, "Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Description", global::System.Data.SqlDbType.Text, 2147483647, global::System.Data.ParameterDirection.Input, 0, 0, "Description", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Price", global::System.Data.SqlDbType.Float, 8, global::System.Data.ParameterDirection.Input, 0, 0, "Price", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@MenuId", global::System.Data.SqlDbType.Variant, 1024, global::System.Data.ParameterDirection.Input, 0, 0, "MenuId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@MenuId", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "MenuId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2400,7 +2400,7 @@ SELECT Id, Name, Description, Price FROM Menu_Item WHERE (Id = SCOPE_IDENTITY())
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, false)]
-        public virtual int InsertNewMenuItem(string Name, string Description, double Price, object MenuId) {
+        public virtual int InsertNewMenuItem(string Name, string Description, double Price, int MenuId) {
             global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[2];
             if ((Name == null)) {
                 throw new global::System.ArgumentNullException("Name");
@@ -2415,12 +2415,7 @@ SELECT Id, Name, Description, Price FROM Menu_Item WHERE (Id = SCOPE_IDENTITY())
                 command.Parameters[1].Value = ((string)(Description));
             }
             command.Parameters[2].Value = ((double)(Price));
-            if ((MenuId == null)) {
-                throw new global::System.ArgumentNullException("MenuId");
-            }
-            else {
-                command.Parameters[3].Value = ((object)(MenuId));
-            }
+            command.Parameters[3].Value = ((int)(MenuId));
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
             if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {

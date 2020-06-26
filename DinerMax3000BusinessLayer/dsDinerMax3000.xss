@@ -7,31 +7,39 @@
 <DiagramLayout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ex:showrelationlabel="True" ViewPortX="0" ViewPortY="0" xmlns:ex="urn:schemas-microsoft-com:xml-msdatasource-layout-extended" xmlns="urn:schemas-microsoft-com:xml-msdatasource-layout">
   <Shapes>
     <Shape ID="DesignTable:Menu" ZOrder="5" X="98" Y="69" Height="172" Width="178" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="121" />
-    <Shape ID="DesignTable:Menu_Item" ZOrder="4" X="395" Y="84" Height="153" Width="266" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="102" />
-    <Shape ID="DesignTable:Menu_MenuItem" ZOrder="3" X="210" Y="317" Height="134" Width="241" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="83" />
+    <Shape ID="DesignTable:Menu_Item" ZOrder="1" X="526" Y="38" Height="191" Width="300" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="102" />
+    <Shape ID="DesignTable:Menu_MenuItem" ZOrder="4" X="269" Y="358" Height="134" Width="241" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="83" />
   </Shapes>
   <Connectors>
-    <Connector ID="DesignRelation:Menu_Item_Menu_MenuItem" ZOrder="2" LineWidth="11">
+    <Connector ID="DesignRelation:Menu_Item_Menu_MenuItem" ZOrder="3" LineWidth="11">
       <RoutePoints>
         <Point>
-          <X>423</X>
-          <Y>237</Y>
+          <X>552</X>
+          <Y>229</Y>
         </Point>
         <Point>
-          <X>423</X>
-          <Y>317</Y>
+          <X>552</X>
+          <Y>375</Y>
+        </Point>
+        <Point>
+          <X>510</X>
+          <Y>375</Y>
         </Point>
       </RoutePoints>
     </Connector>
-    <Connector ID="DesignRelation:Menu_Menu_MenuItem" ZOrder="1" LineWidth="11">
+    <Connector ID="DesignRelation:Menu_Menu_MenuItem" ZOrder="2" LineWidth="11">
       <RoutePoints>
         <Point>
-          <X>243</X>
+          <X>131</X>
           <Y>241</Y>
         </Point>
         <Point>
-          <X>243</X>
-          <Y>317</Y>
+          <X>131</X>
+          <Y>383</Y>
+        </Point>
+        <Point>
+          <X>269</X>
+          <Y>383</Y>
         </Point>
       </RoutePoints>
     </Connector>
