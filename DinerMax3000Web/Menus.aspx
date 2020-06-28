@@ -3,11 +3,11 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cphMainContent" runat="Server">
-    <asp:GridView ID="gvMenu" AutoGenerateColumns="false" DataSourceID="odsMenu" runat="server" Height="106px" Width="600px">
+    <asp:GridView ID="gvMenu" AutoGenerateColumns="false" DataSourceID="odsMenu" runat="server">
         <Columns>
             <asp:TemplateField>
                 <ItemTemplate>
-                    <div class="MenuHeadings"><%#Eval("Name") %> </div>
+                    <div class="MenuHeadings"> <%#Eval("Name")%> </div>
                     <asp:GridView CssClass="MenuGridViews" ID="gvMenuItems" runat="server"></asp:GridView>
                 </ItemTemplate>
             </asp:TemplateField>
