@@ -25,7 +25,7 @@ namespace DinerMax3000Console
             // loops through the menus
             foreach (Menu currentMenu in menusFromDatabase) 
             {
-                foreach (MenuItem currentItem in currentMenu.items)
+                foreach (MenuItem currentItem in currentMenu.Items)
                 {
                     hungryGuestOrder.items.Add(currentItem);
                 }

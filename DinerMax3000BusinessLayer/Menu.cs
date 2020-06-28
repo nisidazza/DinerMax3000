@@ -10,7 +10,7 @@ namespace DinerMax3000.Business
     public class Menu
     {
         public Menu() {
-            items = new List<MenuItem>();
+            Items = new List<MenuItem>();
 
         }
 
@@ -59,10 +59,10 @@ namespace DinerMax3000.Business
             item.Title = Title;
             item.Description = Description;
             item.Price = Price;
-            items.Add(item);
+            Items.Add(item);
         }
 
-        public string Name;
-        public List<MenuItem> items;
+        public string Name { get; set; }
+        public List<MenuItem> Items { get; set; }
     }
 }
