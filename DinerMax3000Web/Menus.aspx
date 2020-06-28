@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cphMainContent" runat="Server">
-    <asp:GridView ID="gvMenu" DataSourceID="odsMenu" runat="server" Height="106px" Width="600px">
+    <asp:GridView ID="gvMenu" AutoGenerateColumns="false" DataSourceID="odsMenu" runat="server" Height="106px" Width="600px">
         <Columns>
             <asp:TemplateField>
                 <ItemTemplate>
